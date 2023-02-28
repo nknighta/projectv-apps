@@ -1,0 +1,24 @@
+{
+  "name": "projectv",
+  "version": "0.4.27",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "next dev --turbo"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.5.1",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@material-ui/core": "^4.12.4",
+    "framer-motion": "^10.0.1",
+    "next": "^13.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "18.14.2",
+    "@types/react": "18.0.28",
+    "typescript": "4.9.5"
+  }
+}
