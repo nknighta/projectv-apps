@@ -2,6 +2,7 @@ import React from 'react'
 import {Box, Flex, Text, Button} from '@chakra-ui/react'
 import {UserStatus} from '../status/status'
 import Apps from '../compnents/apps'
+import StickyFooter from '../compnents/footer'
 
 export default function Index() {
 	const Title = ({children}) => {
@@ -30,6 +31,8 @@ export default function Index() {
 				</Box>
 			</Flex>
 			<div>
+			</div>
+			<div>
 				<div>
 					<Title>Apps</Title>
 					<Box h={height} bgColor={"#ff3300"}>
@@ -53,9 +56,14 @@ export default function Index() {
 						<Apps />
 					</Flex>
 				</div>
-				<Flex>
+				<div>
 					<Title>Docs</Title>
-				</Flex>
+					<div>
+						<h1>ProjectV</h1>
+						<a href="/">aa</a>
+					</div>
+				</div>
+				<StickyFooter />
 			</div >
 		</>
 	)

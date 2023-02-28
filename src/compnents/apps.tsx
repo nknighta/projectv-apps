@@ -1,7 +1,7 @@
 import {Flex, Button} from '@chakra-ui/react'
 import React from 'react'
 
-const apps = ["a", "b", "c", "d"];
+const apps = ["Apaas", 111, "andaddadadadad", "dasdada", "wwwww"];
 const packs = ["pack1", "pack2", "pack3"];
 
 export default function Apps({props}: any) {
@@ -14,7 +14,11 @@ export default function Apps({props}: any) {
 	}}>
 		{apps}
 	</Button>);
-	const packlist = packs.map(packs => <a href={link}>{packs}</a>);
+	const packlist = packs.map(packs => <li style={{
+		margin: "2vh 2vh 2vh 5vh"
+	}}>
+		<a href={link}>{packs}</a>
+	</li>);
 	return (
 		<>
 			<ul>
@@ -23,7 +27,9 @@ export default function Apps({props}: any) {
 						{applist}
 					</Flex>
 					<Flex>
-						{packlist}
+						<ul>
+							{packlist}
+						</ul>
 					</Flex>
 				</ul>
 			</ul>
